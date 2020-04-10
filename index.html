@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .template{
+            display:grid;
+            grid-template-rows: 120px 300px 200px 120px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .template *{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header{
+            background:darkgrey;
+            grid-column: 1/-1;
+        }
+        .main{
+            background-color: blueviolet;
+            grid-column: 1/4;
+            grid-row:2/3;
+        }
+        .sidebar{
+            background:lightgrey;
+            grid-column:4/5;
+            grid-row:2/4;
+        }
+        .article{
+            background-color: brown;
+        }
+        .footer{
+            background-color: darkblue;
+            grid-column:1/-1;
+        }
+    </style>
+</head>
+<body>
+    <div class="template">
+        <div class="header">
+            Header
+        </div>
+        <div class="main">
+            Main
+        </div>
+        <div class="article">
+            Blog Post 1
+        </div>
+        <div class="article">
+            Blog Post 2
+        </div>
+        <div class="article">
+            Blog Post 3
+        </div>
+        <div class="sidebar">
+            Sidebar
+        </div>
+        <div class="footer">
+            footer
+        </div>
+    </div>
+</body>
+</html>
